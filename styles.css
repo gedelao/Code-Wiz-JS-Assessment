@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    min-height: 300px;
+}
+
+.title {
+    text-align: center;
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-row input,
+.input-row button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.input-row input {
+    border: 1px solid #ddd;
+    flex-grow: 1;
+}
+
+.input-row button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.input-row button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Shape Container Styles */
+.shapeContainer {
+    text-align: center;
+}
+
+/* Shape Styles */
+.shape {
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Specific styles for each shape */
+.square,
+.rectangle,
+.circle,
+.triangle {
+    display: inline-block;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.rectangle {
+    width: 150px;
+    height: 100px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: green;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .card {
+        margin: 10px;
+        width: 90%;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-row input,
+    .input-row button {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+}
