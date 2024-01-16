@@ -1,0 +1,2 @@
+# Code-Wiz-JS-Assessment
+ 
